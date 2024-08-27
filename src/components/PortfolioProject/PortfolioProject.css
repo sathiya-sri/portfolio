@@ -1,0 +1,229 @@
+.project,
+.project-light {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7% 7%;
+  gap: 50px;
+}
+.project_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project h1,
+.project-light h1 {
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+.project h2,
+.project-light h2 {
+  color: violet;
+  font-weight: 500;
+  cursor: pointer;
+}
+.project hr,
+.project-light hr {
+  width: 50%;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+}
+.project_img,
+.project_img-light {
+  background-color: #171417;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+}
+.project_img::after,
+.project_img-light::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.project_img:hover::after,
+.project_img-light:hover::after {
+  width: 100%;
+}
+.project_img img,
+.project_img-light img {
+  border-radius: 10px;
+}
+.project button,
+.project-light button {
+  width: 200px;
+  height: 60px;
+  background-color: violet;
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border: none;
+  box-sizing: border-box;
+  transition: all 0.6s;
+}
+.project button:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.project_img:hover,
+.project_img-light:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.project_img span,
+.project_img-light span {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  color: #e39ff6;
+  box-shadow: 3px 7px 15px #e39ff6;
+}
+.project_img span .project_icon,
+.project_img-light span .project_icon {
+  font-size: 25px;
+  padding: 1px;
+}
+.project_img:hover span,
+.project_img-light:hover span {
+  opacity: 1;
+  z-index: 2;
+  left: 40%;
+  transform: translateX(10px);
+}
+.project_img span:hover,
+.project_img-light span:hover {
+  background-color: #000;
+}
+.project_img h1,
+.project_img-light h1 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 15px;
+}
+.project_img h2,
+.project_img-light h2 {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  margin-top: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.project_img:hover .project_arrow,
+.project_img-light:hover .project_arrow {
+  box-shadow: 0 0 5px #e39ff6;
+}
+.project_img:hover h2,
+.project_img-light:hover h2 {
+  text-shadow: 0 0 5px #e39ff6, 0 0 5px #e39ff6;
+}
+.project_arrow {
+  margin-top: 1px;
+  margin-left: 2px;
+}
+
+.project-light {
+  background-color: #eee;
+  color: #000;
+}
+.project_img-light {
+  background-color: #fff;
+}
+.project-light hr {
+  border: 1.5px solid #000;
+}
+.project_img-light::after {
+  background-color: rgba(227, 159, 246, 0.1);
+}
+.project-light button:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.searchbar,
+.searchbar-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  padding: 5px;
+}
+.searchbar button,
+.searchbar-light button {
+  border: none;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+.searchbar-light button {
+  background-color: #eee;
+  color: #000;
+}
+.searchbar .all,
+.searchbar-light .all {
+  background-color: #191919;
+  text-align: center;
+}
+.searchbar-light .all {
+  background-color: #fff;
+}
+.searchbar button:hover,
+.searchbar-light button:hover {
+  background-color: violet;
+  color: #fff;
+}
+.color {
+  color: #fffa;
+}
+.color-light {
+  color: #000;
+}
+@media (max-width: 768px) {
+  .searchbar button,
+  .searchbar-light button {
+    width: 150px;
+  }
+  .searchbar,
+.searchbar-light{
+  gap:10px;
+}
+}
+@media (max-width: 640px) {
+  .searchbar button,
+  .searchbar-light button {
+    width: 100px;
+  }
+  .searchbar,
+.searchbar-light{
+  gap: 5px;
+}
+}

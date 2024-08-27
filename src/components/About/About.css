@@ -1,0 +1,116 @@
+.about,
+.about-light {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7% 7%;
+  gap: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.about-light {
+  background-color: #eee;
+  color: #000;
+}
+.about_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about h1,
+.about-light h1 {
+  text-align: left;
+  font-size: 30px;
+  word-spacing: 10px;
+  cursor: pointer;
+}
+.about h2,
+.about-light h2 {
+  color: violet;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.about hr,
+.about-light hr {
+  width: 50%;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+}
+.about-light hr {
+  border: 1.5px solid #000;
+}
+.about_detail span,.about_detail-light span {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1.5px solid #e39ff6;
+  background-color: #e39ff6;
+  transition: 0.6s;
+  position: relative;
+}
+.about_detail-light span{
+    border: 1.5px solid violet;
+    background-color: violet; 
+}
+.about_detail span:hover ,.about_detail-light span:hover{
+  transform: translateY(-10px);
+  background-color: #000;
+  color: #fff;
+}
+.about_detail .about_content,
+.about_detail-light .about_content {
+  margin: 0 20px;
+  position: relative;
+}
+.about_detail .about_content h3,
+.about_detail-light .about_content h3 {
+  line-height: 25px;
+  color: #e39ff6;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.about_detail-light .about_content h3{
+    color: violet;
+    font-weight: 500;
+}
+.about_detail .about_content p,
+.about_detail-light .about_content p {
+  font-size: 12px;
+  color: #fffa;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  cursor: pointer;
+}
+.about_detail-light .about_content p{
+    color: #000;
+    font-weight: 400;
+}
+.about_detail,
+.about_detail-light {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+.about_section h1 {
+  margin-top: 30px;
+}
+.about_section p {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}

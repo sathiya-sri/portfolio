@@ -1,0 +1,104 @@
+.service,
+.service-light {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4% 7%;
+  gap: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.service-light {
+  background-color: #eee;
+  color: #000;
+}
+.service_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service h1,
+.service-light h1 {
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 10px;
+  cursor: pointer;
+}
+.service h2,
+.service-light h2 {
+  color: violet;
+  font-weight: 400;
+  cursor: pointer;
+}
+.service hr,
+.service-light hr {
+  width: 50%;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+}
+.service-light hr {
+  border: 1.5px solid #000;
+}
+.service_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  row-gap: 70px;
+  column-gap: 50px;
+}
+.service_img,
+.service_img-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #171417;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.service_img-light {
+  background-color: #fff;
+}
+.service_img span,
+.service_img-light span {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.service_img-light span {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.service_img h1,
+.service_img-light h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: violet;
+  word-spacing: -0.1px;
+  transition: all 0.5s linear;
+}
+.service_img p,
+.service_img-light p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 25px;
+  text-align: justify;
+}
+.service_img:hover {
+  cursor: pointer;
+  transform: translateY(-30px);
+  box-shadow: 8px 8px 4px -2px #00fffc;
+  background-color: #000;
+}
+.service_img-light:hover {
+  cursor: pointer;
+  transform: translateY(-30px);
+  box-shadow: 8px 8px 4px -2px #e39ff6;
+  background-color: #eee;
+}

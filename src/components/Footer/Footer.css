@@ -1,0 +1,82 @@
+.footer,.footer-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #000;
+  color: #fff;
+  gap: 30px;
+  border-top: 1px solid lightgray;
+}
+.footer-light{
+  background-color: #fff;
+  color: #000;
+}
+.footer .footer_socialmedia_icon ,.footer-light .footer_socialmedia_icon{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer .footer_socialmedia_icon span ,.footer-light .footer_socialmedia_icon span{
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  background-color: violet;
+  transition: all 0.6s ease-in-out;
+}
+.footer .footer_socialmedia_icon span:hover,.footer-light .footer_socialmedia_icon span:hover{
+  transform: translateY(-7px);
+  background-color: black;
+  box-shadow: 0px 2px 2px #fff;
+}
+.footer-light .footer_socialmedia_icon span:hover{
+  box-shadow: 0 5px 5px #e39ff6;
+}
+.footer ul,.footer-light ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+.footer ul li,.footer-light ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 16px;
+  position: relative;
+}
+.footer li:hover .Link,.footer-light li:hover .Link {
+  color: #e39ff6;
+  font-weight: 500;
+}
+.footer ul li::after,.footer-light ul li::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -1px;
+  transition: all 0.5s linear;
+  background-color: #fff;
+}
+.footer-light ul li::after{
+  background-color: #000;
+}
+.footer ul li:hover::after,.footer-light ul li:hover::after {
+  width: 100%;
+}
+.footer .glow , .footer-light .glow {
+  font-size: 17px;
+  color: #e39ff6;
+  text-align: center;
+}
+.footer-light .glow {
+  color:violet;
+  font-weight: 600;
+}

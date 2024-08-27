@@ -1,0 +1,159 @@
+.timeline,
+.timeline-light {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 9%;
+  padding-bottom: 10%;
+  transition: all 0.3s ease-in-out;
+}
+.timeline_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.timeline h1,
+.timeline-light h1 {
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 10px;
+  cursor: pointer;
+}
+.timeline h2,
+.timeline-light h2 {
+  color: violet;
+  font-weight: 400;
+  cursor: pointer;
+}
+.timeline hr,
+.timeline-light hr {
+  width: 50%;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+}
+.timeline-light hr {
+  border: 1.5px solid #000;
+}
+.timeline-light {
+  background-color: #eee;
+  color: #000;
+}
+.timeline_card,
+.timeline_card-light {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #171717;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.timeline_card-light {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.6s ease-in-out;
+}
+.timeline_card strong,
+.timeline_card-light strong {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e39ff6;
+}
+.timeline_card-light strong {
+  color: violet;
+  font-weight: 700;
+}
+.timeline_card h1,
+.timeline_card-light h1 {
+  font-size: 20px;
+}
+.timeline_card p,
+.timeline_card-light p {
+  font-size: 15px;
+}
+.timeline_section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  cursor: pointer;
+}
+.timeline_line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+.timeline .timeline_line .span::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 13px;
+  width: 1.5px;
+  height: 105px;
+  border: 0.5px solid violet;
+  background-color: violet;
+  transition: all 0.6s ease-in-out;
+}
+.timeline-light .timeline_line .span::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 13px;
+  width: 1.5px;
+  height: 105px;
+  border: 1.5px solid violet;
+  background-color: violet;
+  transition: all 0.6s ease-in-out;
+}
+.timeline .timeline_line .div::before,
+.timeline-light .timeline_line .div::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1.5px solid violet;
+  background-color: violet;
+  transition: all 0.6s ease-in-out;
+}
+.timeline .timeline_line .div::before {
+  background-color: #e39ff6;
+  border: 0.5px solid #e39ff6;
+  transition: all 0.6s ease-in-out;
+}
+.timeline-light .timeline_line .div:hover::before {
+  background-color: #eee;
+  cursor: pointer;
+}
+.timeline .timeline_line .div:hover::before {
+  background-color: #000;
+  cursor: pointer;
+}
+.timeline_card:hover {
+  transform: translateY(-15px);
+}
+.timeline_card-light:hover {
+  transform: translateY(-15px);
+}

@@ -1,0 +1,44 @@
+.dark_bg {
+    margin-left: 30px;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    font-weight: 700;
+    background-color: #fff;
+  }
+  .light_bg{
+    margin-left: 30px;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background-color: #000;
+  }
+  .mode-icon {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .mode_bg:hover {
+    background-color: #fff;
+  }
